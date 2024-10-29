@@ -1,0 +1,133 @@
+/* Підключення шрифтів Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f1f5f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Заголовок та навігація */
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f9f871;
+}
+
+/* Стилі для секцій */
+main {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero, .advantages, .services, .contact-info, .author-info {
+    background: #ffffff;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero:hover, .advantages:hover, .services:hover, .contact-info:hover, .author-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.hero h2, .advantages h2, .services h2, .contact-info h2, .author-info h2 {
+    color: #2575fc;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hero p, .advantages p, .services p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+/* Кнопка */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+/* Секція переваг */
+.advantages {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.advantage {
+    flex: 1;
+    min-width: 250px;
+    padding: 15px;
+    text-align: center;
+    background: #f7faff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.advantage:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.advantage h3 {
+    color: #2575fc;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+/* Футер */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
